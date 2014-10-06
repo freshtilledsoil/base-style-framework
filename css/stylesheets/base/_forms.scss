@@ -68,6 +68,10 @@ input {
     
   }
   
+  &[list] {
+    
+  }
+  
 } // input
 
 button,
@@ -114,5 +118,9 @@ select {
   &:focus {
   
   }
+  
+}
+
+datalist {
   
 }

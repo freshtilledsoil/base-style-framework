@@ -81,6 +81,12 @@ You can then either modify the uncompressed FTS UI Kit CSS files, or if you are 
 
 If you need to install Sass on your machine, you can read how to do that here: http://sass-lang.com/install
 
+Compiling the Sass then only requires you to command line into the parent UI Kit folder and run
+```sass --watch sass:css```
+to compile the Sass into the CSS distribution folder.
+
+
+
 The Sass files are broken up into various partials for organization.
 
 <pre>

@@ -1,0 +1,150 @@
+// ----------------------------------------------------------------------------
+//  Width Presets
+//  A library of widths to modify block & inline-block components
+//
+//  Note: Media Queries and the :not pseudo selector do not work in IE8
+//
+//
+// ----------------------------------------------------------------------------
+
+// Larger Widths
+
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+
+// Medium Widths
+
+.w-66 {
+  width: 66.6666%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-33 {
+  width: 33.3333%;
+}
+
+
+// Smaller Widths
+
+.w-30 {
+  width: 30%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+[class*="w-"] {
+  max-width: 100%;
+}
+
+
+// Smaller widths become useful just before 'ipad portrait' size
+// @media screen and ( max-width: 750px ) {
+//   .w-30,
+//   .w-25,
+//   .w-20,
+//   .w-15,
+//   .w-10 {
+//     width: 100%;
+//   }
+// }
+
+// For remaining widths, convert them over to 100% at narrower screen sizes,
+// unless they are using the .w-force class, which will keep them at their
+// designated with, regardless of breakpoint
+@media screen and ( max-width: 720px ) {
+  [class*="w-"]:not(.w-force) {
+    width: 100%;
+  }
+}
+
+
+
+// Simple Grid
+
+.grid {
+  @extend %clearfix;
+  margin-left: -1.5em;
+  margin-bottom: 1.25em;
+
+  > [class*="w-"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 1.5em;
+    position: relative;
+
+    .grid {
+      margin-bottom: 0;
+
+      @media screen and ( max-width: 720px ) {
+        > [class*="w-"]:last-child,
+        > .w-force {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media screen and ( max-width: 720px ) {
+      margin-bottom: 1.25em;
+    }
+  }
+}
+
+
+.grid--gutters-wide {
+  margin-left: -2.5em;
+
+  > [class*="w-"] {
+    padding-left: 2.5em;
+  }
+}
+
+.grid--gutters-narrow {
+  margin-left: -.5em;
+
+  > [class*="w-"] {
+    padding-left: .5em;
+  }
+}

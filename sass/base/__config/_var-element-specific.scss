@@ -1,0 +1,83 @@
+// ----------------------------------------------------------------------------
+//  Default Global Variables
+// ----------------------------------------------------------------------------
+
+// Standard border style to apply to any element's rule set
+$base-border-style:               1px solid $c-gray-light;
+
+
+// Nav
+$c-base-nav-background:           transparent;
+$c-base-nav-link:                 #333;
+
+
+// Forms
+$fieldset-border:                 0;
+
+$input-border:                    1px solid $c-gray-light;
+$input-border-radius:             2px;
+
+$c-input-placeholder:             $c-gray;
+
+$c-label:                         #7f7f7f;
+
+$input-background-color:          $c-gray-lightest;
+
+$input-text-box-shadow:           inset 0 2px 0 0 #eaeaea;
+$input-text-box-shadow--focus:    0 0 0 1px #6baceb;
+
+$input-focus-background-color:    $c-white;
+$input-focus-border-color:        $c-secondary;
+
+$input-valid-border-color:        $c-success;
+
+$disabled-background-color:       $input-background-color;
+$disabled-border-color:           $c-gray-lightest;
+
+$readonly-background-color:       $c-white;
+
+$output-background-color:         $c-gray-lightest;
+
+
+// Progress Bar
+$progress-background-color:       $c-gray-lightest;
+$progress-fill-color:             $c-success;
+
+$progress-border:                 $base-border-style;
+$progress-border-radius:          2px;
+
+$progress-height:                 16px;
+$progress-padding:                2px;
+
+
+
+// Buttons
+$btn-border:                      1px solid #f0f0f0;
+$btn-border--bottom-accent:       3px;
+$btn-border--bottom-accent-pad:   .9em 1.15em .7em;
+$btn-base-padding:                .9em 1.15em;
+$btn-border--radius:              3px;
+
+
+// Range Input
+$input-range-background-color:    $c-gray-lightest;
+
+$input-range-box-shadow--1:       inset 0 2px 0 0 #f2f2f2;
+$input-range-box-shadow--2:       0 2px 3px #ddd;
+
+
+// iFrame
+$iframe-background-color:         $c-gray-lightest;
+$iframe-border:                   $base-border-style;
+$iframe-min-height:               100px;
+
+
+// HR
+$hr-border:                       $base-border-style;
+
+
+// Tables
+$table-background-color:          $c-white;
+$thead-background-color:          $c-gray-lightest;
+$tfoot-background-color:          $c-gray-lightest;
+$tr-border-bottom:                1px solid #f0f0f0;

@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+//  Styled List Elements
+// ----------------------------------------------------------------------------
+
+.table-container {
+  overflow: scroll;
+
+  @media screen and (max-width: 660px) {
+    border: 1px solid rgba(0,0,0,.2);
+  }
+
+  table {
+    min-width: 600px;
+    table-layout: fixed;
+  }
+}

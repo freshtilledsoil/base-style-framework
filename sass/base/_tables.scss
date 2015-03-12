@@ -1,0 +1,82 @@
+// ----------------------------------------------------------------------------
+//  Small Element
+// ----------------------------------------------------------------------------
+
+table {
+  @extend %global-margin-base;
+  background: $table-background-color;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  width: 100%;
+}
+
+
+thead {
+  background: $thead-background-color;
+
+  th {
+    padding: .75em .5em;
+  }
+}
+
+
+tbody {
+  // ...
+}
+
+
+tfoot {
+  background: $tfoot-background-color;
+
+  td {
+    font-size: $tiny-font-size;
+    font-weight: bold;
+    font-weight: 600;
+  }
+}
+
+
+tr {
+  border-bottom: $tr-border-bottom;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+// for th + td
+%table-shared-cells {
+  padding: 1em .5em;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+th {
+  @extend %table-shared-cells;
+  font-weight: bold;
+  font-weight: 600;
+
+  &[scope="row"] {
+    font-size: $table-heading--row;
+  }
+
+  &[scope="col"] {
+    font-size: $table-heading--col;
+  }
+} // end th
+
+
+td {
+  @extend %table-shared-cells;
+  font-size: $small-font-size;
+}
+
+
+caption {
+  @extend .txt-h6;
+  font-weight: bold;
+  caption-side: top;
+  text-align: left;
+}

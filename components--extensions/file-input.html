@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Base Forms: Input File Styled</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/base-styles--plus.css"">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body style="padding: 40px;">
+    <h1>Input File Styled</h1>
+
+    <label for="input_file">File Input</label>
+
+    <div class="input-file-block">
+      <input type="file" id="input_file" class="input-file" />
+
+      <label for="input_file" class="input-file-placeholder" id="input_file_placeholder">
+        Select a file...
+      </label>
+
+      <span class="input-file-btn">
+        Browse
+      </span>
+
+    </div>
+
+    <br />
+    <br />
+
+
+    <label for="input_file" class="is-disabled">File Input (disabled)</label>
+
+    <div class="input-file-block" class="is-disabled">
+      <input type="file" id="input_file" class="input-file" disabled />
+
+      <label for="input_file" class="input-file-placeholder" id="input_file_placeholder">
+        Select a file...
+      </label>
+
+      <span class="input-file-btn">
+        Browse
+      </span>
+
+    </div>
+
+    <script>
+      // proof of concept
+      // not production ready code
+      var fileName = document.getElementById('input_file');
+
+      function swapText () {
+        fileName = fileName.files[0];
+        document.getElementById('input_file_placeholder').innerHTML = fileName.name;
+      }
+
+      document.getElementById('input_file').addEventListener( 'change', swapText );
+    </script>
+
+  </body>
+</html>

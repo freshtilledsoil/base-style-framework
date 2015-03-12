@@ -1,0 +1,104 @@
+/******************************************************************************
+*
+*   Home Base:
+*     github.com/freshtilledsoil/base-style-framework
+*     Version 1.0
+*     Last Updated: 03.12.2015
+*
+*     Beyond Normalization, a base set of markup styling and
+*     patterns to provide an easily configurable head-start
+*     to any web project.
+*
+*
+*   By:
+*     Scott O'Hara
+*     Tim Wright
+*     Neal Corbett
+*     www.freshtilledsoil.com
+*
+*
+*   License:
+*     The MIT License (MIT)
+*
+******************************************************************************/
+
+
+
+/******************************************************************************
+*
+*   Base Styling
+*
+*   Baseline / standardized styling for native HTML elements
+*   that will work in all modern browsers, and IE8 +, by incorporating
+*   standards set by normalize.css (v3.0.2), and expanding on them with
+*   default styling by the team at Fresh Tilled Soil.
+*
+******************************************************************************/
+
+// Import google fonts here if you absolutely can not import
+// them withing the <head> of your HTML document.
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,700);
+
+@import
+        // Config / Support files
+        'base/__config/var-colors',
+        'base/__config/var-type',
+        'base/__config/var-element-specific',
+        'base/__config/silent-classes',
+
+
+        // Base Styling to standard HTML markup
+        'base/html',
+
+
+        // Typography Specific
+        'base/typography/type-primary',    // h1-6, p, small
+        'base/typography/type-secondary',  // inline type elements
+        'base/typography/links',           // a, a:____, a[____]
+        'base/typography/lists',           // ul, ol, dl
+        'base/typography/quotes',          // q, blockquote
+        'base/typography/code',            // kbd, code, pre, var, kbd, samp
+
+
+        // Navigation / Menu Specific
+        'base/nav',
+
+
+        // Form / Button Specific
+        'base/forms--general',
+        'base/forms--input__text',
+        'base/forms--input__buttons',
+        'base/forms--input__menus',
+        'base/forms--input__range',
+
+
+        // Media Specific
+        'base/img-svg',
+        'base/figure-figcaption',
+        'base/media',
+
+
+        // Semantic 'layout' Specific
+        'base/tables',
+        'base/hr',
+
+
+        // Progress Specific
+        'base/progress',
+
+
+        // Content Wrapping Elements (better name plz)
+        'base/iframe',
+        'base/dialog';
+
+
+// Base Add-ons *
+
+@import
+        'addons/buttons',
+        'addons/alerts';
+
+
+// *
+// These add-ons are special cases, for elements we feel should be
+// part of the standard UI-kit.

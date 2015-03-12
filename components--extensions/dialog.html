@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Base Dialog Element</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- style -->
+  <link rel="stylesheet" href="../css/base-styles--plus.css"">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+  <body style="padding: 40px;">
+
+    <h1>Dialog Element</h1>
+
+    <button type="button" id="open_modal_dialog">Open Modal Dialog</button>
+
+    <dialog id="modal_example" role="dialog" aria-hidden="true">
+      <h2>A Modal Dialog Example</h2>
+      <p>
+        This is an example of the dialog element in action as a modal window.
+      </p>
+
+      <p>
+        However, unless you're using Chrome 37+ or Opera 24+,
+        you're probably not seeing much of a dialog, much less
+        even reading this text...
+      </p>
+
+      <p>
+        ¯\_(ツ)_/¯
+      </p>
+
+      <button type="button" id="close_modal_dialog">Close</button>
+
+    </dialog>
+
+
+    <dialog id="dialog_example">
+      <h2>A Inline Dialog Example</h2>
+      <p>
+        This is an example of the dialog element in action as an in-page item.
+      </p>
+
+      <p>
+        However, unless you're using Chrome 37+ or Opera 24+,
+        you're probably not seeing much of a dialog, much less
+        even reading this text...
+      </p>
+
+      <p>
+        ¯\_(ツ)_/¯
+      </p>
+
+      <button type="button" id="close_dialog">Close</button>
+
+    </dialog>
+
+    <button type="button" id="open_dialog">Open in-line Dialog</button>
+
+    <script>
+      (function() {
+        var openModal = document.getElementById('open_modal_dialog'),
+            closeModal = document.getElementById('close_modal_dialog'),
+            modalExample = document.getElementById('modal_example'),
+
+            openDialog = document.getElementById('open_dialog'),
+            closeDialog = document.getElementById('close_dialog'),
+            dialogExample = document.getElementById('dialog_example');
+
+        // Opens a the modal dialog
+        openModal.addEventListener('click', function() {
+          modalExample.setAttribute('aria-hidden', 'false');
+          modalExample.showModal();
+        });
+
+        // Close a modal dialog
+        closeModal.addEventListener('click', function() {
+          modalExample.close();
+          modalExample.setAttribute('aria-hidden', 'true');
+        });
+
+        // Open in-page dialog
+        openDialog.addEventListener('click', function() {
+          dialogExample.show();
+        });
+
+        // Close in-page dialog
+        closeDialog.addEventListener('click', function() {
+          dialogExample.close();
+        });
+
+      })();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+// ----------------------------------------------------------------------------
+//  Emphasis Block
+// ----------------------------------------------------------------------------
+
+.emph-block {
+  @extend %global-margin-base;
+  background: #fefff;
+  border-radius: 0 0 4px 4px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
+  border-top: none;
+}

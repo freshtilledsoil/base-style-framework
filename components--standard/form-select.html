@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Base Forms: Select</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+  <!-- style -->
+  <link rel="stylesheet" href="../css/base-styles--plus.css"">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+  <body style="padding: 40px;">
+
+    <h1>Select Element</h1>
+
+    <label for="standard">Label for Standard Select</label>
+    <select id="standard">
+      <option disabled selected>Select an Item...</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="standard2" class="is-disabled">Label for Standard Select (disabled)</label>
+    <select id="standard2" disabled>
+      <option disabled selected="selected">Select an Item...</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="standard">Label for Standard Select (with optgroup)</label>
+    <select id="standard">
+      <option disabled selected="selected">Select an Item...</option>
+      <optgroup label="Choices">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </optgroup>
+      <optgroup label="More Choices">
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+        <option value="7">Option 7</option>
+        <option value="8">Option 8</option>
+      </optgroup>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="multi_select1">Multi Select</label>
+    <br />
+    <select id="multi_select1" multiple size="4">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="multi_select">Multi Select (w/optgroups)</label>
+    <br />
+    <select id="multi_select" multiple size="4">
+      <optgroup label="group 1">
+        <option value="1" selected>Option 1 (pre-selected)</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </optgroup>
+      <optgroup label="group 2">
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+      </optgroup>
+    </select>
+
+
+    <br />
+    <br />
+
+    <label for="multi_select1" class="is-disabled">Multi Select (disabled)</label>
+    <br />
+    <select id="multi_select1" multiple size="4" disabled>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+    </select>
+
+
+  </body>
+</html>

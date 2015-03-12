@@ -1,0 +1,55 @@
+//  ----------------------------------------
+//  Color Library
+//  ----------------------------------------
+
+// Brand
+$c-primary:                     #3c6fb4;
+$c-secondary:                   #73ace6;
+
+
+// Darkest / Lightest Project
+$c-black:                       #0a0a0a;
+$c-white:                       #fff;
+
+
+// Grays
+$c-gray-darkest:                #595959;
+$c-gray-dark:                   #808080;
+$c-gray:                        #b2b2b2;
+$c-gray-light:                  #d6d6d6;
+$c-gray-lightest:               #f7f7f7;
+
+
+// States
+$c-error:                       #e67373;
+$c-error-dim:                   #f7d5d5; // 30% of error
+
+$c-success:                     #bfe673;
+$c-success-dim:                 #ecf7d5; // 30% of success
+
+$c-warning:                     #fcf27e;
+$c-warning-dim:                 #fefbd8; // 30% of warning
+
+
+
+
+//  ----------------------------------------
+//  Standard Element Coloring
+//  ----------------------------------------
+
+// document
+$c-base-background:             #fdfdfd;
+$c-base-text:                   $c-gray-darkest;
+
+
+// links
+$c-base-link:                   $c-primary;
+$c-base-link--visited:          darken($c-base-link, 5%);
+$c-base-link--hover:            darken($c-base-link, 26%);
+$c-base-link--focus-outline:    $c-primary;
+
+
+// text selection (highlighting)
+$c-text-selection-background:   darken($c-primary, 10%);
+$c-text-selection-text:         $c-white;
+$text-selection-text-shadow:    none;

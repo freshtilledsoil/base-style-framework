@@ -1,0 +1,11 @@
+// ----------------------------------------------------------------------------
+//  iframe Element
+// ----------------------------------------------------------------------------
+
+iframe {
+  background: $iframe-background-color;
+  border: $iframe-border;
+  display: block;
+  min-height: $iframe-min-height;
+  width: 100%;
+}

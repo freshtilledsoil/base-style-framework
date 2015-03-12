@@ -1,0 +1,68 @@
+// ----------------------------------------------------------------------------
+//  Headings Elements
+// ----------------------------------------------------------------------------
+
+%h-shared-weight {
+  font-weight: 600;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.333;
+  margin: 0 0 .75em 0;
+}
+
+
+.txt-h1,
+h1 {
+  @extend %h-shared-weight;
+  font-size: $h1-font-size;
+}
+
+.txt-h2,
+h2 {
+  @extend %h-shared-weight;
+  font-size: $h2-font-size;
+}
+
+.txt-h3,
+h3 {
+  @extend %h-shared-weight;
+  font-size: $h3-font-size;
+}
+
+.txt-h4,
+h4 {
+  @extend %h-shared-weight;
+  font-size: $h4-font-size;
+}
+
+.txt-h5,
+h5 {
+  font-size: $h5-font-size;
+}
+
+.txt-h6,
+h6 {
+  font-size: $h6-font-size;
+}
+
+
+
+// ----------------------------------------------------------------------------
+//  Paragraph & Small Elements
+// ----------------------------------------------------------------------------
+
+.txt-base,
+p {
+  @extend %global-margin-base;
+  line-height: 1.75;
+}
+
+
+%small,
+small {
+  font-size: $small-font-size;
+  display: inline-block;
+  line-height: 1.3;
+}

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Widths</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="../css/base-styles--plus.css"">
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' />
+
+    <style>
+      [class*="w-"] > div {
+        background: rgba(0,0,0,.1);
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body style="padding: 40px;">
+
+    <h1>Width Classes</h1>
+
+    <p>
+      A library of widths to be used for building responsive grids, or restricting block level content from extending full width.
+    </p>
+
+    <ol>
+      <li><code>.w-100</code></li>
+      <li><code>.w-90</code></li>
+      <li><code>.w-80</code></li>
+      <li><code>.w-75</code></li>
+      <li><code>.w-70</code></li>
+      <li><code>.w-66</code></li>
+      <li><code>.w-60</code></li>
+      <li><code>.w-50</code></li>
+      <li><code>.w-40</code></li>
+      <li><code>.w-33</code></li>
+      <li><code>.w-30</code></li>
+      <li><code>.w-25</code></li>
+      <li><code>.w-20</code></li>
+      <li><code>.w-15</code></li>
+      <li><code>.w-10</code></li>
+    </ol>
+
+    <hr />
+
+    <h2>Basic Examples:</h2>
+
+    <div class="w-10">
+      <div>
+        10%
+      </div>
+    </div>
+    <div class="w-15">
+      <div>
+        15%
+      </div>
+    </div>
+    <div class="w-20">
+      <div>
+        20%
+      </div>
+    </div>
+    <div class="w-25">
+      <div>
+        25%
+      </div>
+    </div>
+    <div class="w-30">
+      <div>
+        30%
+      </div>
+    </div>
+    <div class="w-33">
+      <div>
+        33%
+      </div>
+    </div>
+    <div class="w-40">
+      <div>
+        40%
+      </div>
+    </div>
+    <div class="w-50">
+      <div>
+        50%
+      </div>
+    </div>
+    <div class="w-60">
+      <div>
+        60%
+      </div>
+    </div>
+    <div class="w-66">
+      <div>
+        66%
+      </div>
+    </div>
+    <div class="w-70">
+      <div>
+        70%
+      </div>
+    </div>
+    <div class="w-75">
+      <div>
+        75%
+      </div>
+    </div>
+    <div class="w-80">
+      <div>
+        80%
+      </div>
+    </div>
+    <div class="w-90">
+      <div>
+        90%
+      </div>
+    </div>
+    <div class="w-100">
+      <div>
+        100%
+      </div>
+    </div>
+
+    <hr />
+
+    <button type="button" class="w-75">Button w/ 75% width</button>
+
+    <hr />
+
+    <figure class="w-100">
+      <p data-height="353" data-theme-id="6437" data-slug-hash="znosJ" data-default-tab="result" data-user="scottohara" class='codepen'>See the Pen <a href='http://codepen.io/scottohara/pen/znosJ/'>:target cat</a> by Scott (<a href='http://codepen.io/scottohara'>@scottohara</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+      <script async src="//codepen.io/assets/embed/ei.js"></script>
+      <figcaption>A full-width figure with an embedded pen from CodePen.</figcaption>
+    </figure>
+
+    <hr />
+
+    <h2>Used in a Responsive Grid:</h2>
+
+    <p>Default State</p>
+    <div class="grid">
+      <div class="w-25">
+        <div>
+          25%
+        </div>
+      </div>
+      <div class="w-25">
+        <div>
+          25%
+        </div>
+      </div>
+      <div class="w-25">
+        <div>
+          25%
+        </div>
+      </div>
+      <div class="w-25">
+        <div>
+          25%
+        </div>
+      </div>
+    </div>
+
+
+    <p>Wide Gutters</p>
+    <div class="grid grid--gutters-wide">
+      <div class="w-30">
+        <div>
+          30%
+        </div>
+      </div>
+      <div class="w-70">
+        <div>
+          70%
+        </div>
+      </div>
+    </div>
+
+
+    <p>Narrow Gutters</p>
+    <div class="grid grid--gutters-narrow">
+      <div class="w-33">
+        <div>
+          33%
+        </div>
+      </div>
+      <div class="w-33">
+        <div>
+          33%
+        </div>
+      </div>
+      <div class="w-33">
+        <div>
+          33%
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid--gutters-narrow">
+      <div class="w-40">
+        <div>
+          40%
+        </div>
+      </div>
+      <div class="w-20">
+        <div>
+          20%
+        </div>
+      </div>
+      <div class="w-20">
+        <div>
+          20%
+        </div>
+      </div>
+      <div class="w-10">
+        <div>
+          10%
+        </div>
+      </div>
+      <div class="w-10">
+        <div>
+          10%
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid--gutters-narrow">
+      <div class="w-50">
+        <div>
+          50%
+        </div>
+      </div>
+      <div class="w-50">
+        <div>
+          50%
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid--gutters-narrow">
+      <div class="w-60">
+        <div>
+          60%
+        </div>
+      </div>
+      <div class="w-40">
+        <div>
+          40%
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <h3>Grids within Grids</h3>
+    <p>
+      66/33 grid with sub-grids
+    </p>
+    <div class="grid grid--gutters-narrow">
+      <div class="w-66">
+        <div>
+          <div class="grid">
+            <div class="w-50">
+              <div>
+                50%
+              </div>
+            </div>
+            <div class="w-50">
+              <div>
+                50%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-33">
+        <div>
+          <div class="grid">
+            <div class="w-50">
+              <div>
+                50%
+              </div>
+            </div>
+            <div class="w-50">
+              <div>
+                50%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      70/30 grid with sub-grids
+    </p>
+      <div class="grid grid--gutters-narrow">
+        <div class="w-70">
+          <div>
+          <div class="grid">
+            <div class="w-50">
+              <div>
+                50%
+              </div>
+            </div>
+            <div class="w-25">
+              <div>
+                25%
+              </div>
+            </div>
+            <div class="w-25">
+              <div>
+                25%
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="w-30">
+          <div>
+            <div class="grid">
+              <div class="w-50">
+                <div>
+                  50%
+                </div>
+              </div>
+              <div class="w-50">
+                <div>
+                  50%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <p>
+        80/20 grid with sub-grids
+      </p>
+      <div class="grid grid--gutters-narrow">
+        <div class="w-80">
+          <div>
+            <div class="grid grid--gutters-narrow">
+              <div class="w-75">
+                <div>
+                  75%
+                </div>
+              </div>
+              <div class="w-25">
+                <div>
+                  25%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-20">
+          <div>
+            <div class="grid grid--gutters-narrow">
+              <div class="w-50 w-force">
+                <div>
+                  50%
+                </div>
+              </div>
+              <div class="w-50 w-force">
+                <div>
+                  50%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

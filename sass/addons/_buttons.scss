@@ -1,0 +1,54 @@
+// ----------------------------------------------------------------------------
+//  Button Styling
+// ----------------------------------------------------------------------------
+
+.btn,
+.btn-cta,
+.btn-cancel {
+  min-width: 220px;
+
+  &[disabled], &[disabled]:hover {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+}
+
+
+.btn {
+  background: #3c6fb4;
+  border-color: darken(#3c6fb4, 5%);
+  color: $c-white;
+}
+
+.btn:hover,
+.btn:focus {
+  background: darken(#3c6fb4, 5%);
+  border-color: darken(#3c6fb4, 10%);
+}
+
+
+.btn-cta {
+  background: #73ace6;
+  border-color: darken(#73ace6, 5%);
+  color: $c-white;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  background: darken(#73ace6, 5%);
+  border-color: darken(#73ace6, 10%);
+}
+
+
+.btn-cancel {
+  background: $c-gray-lightest;
+  color: #7f7f7f;
+  border-color: $c-gray-light;
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus {
+  background: darken($c-gray-lightest, 5%);
+  border-color: darken($c-gray-light, 10%);
+  color: #7f7f7f;
+}

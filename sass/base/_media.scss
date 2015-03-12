@@ -1,0 +1,41 @@
+// ----------------------------------------------------------------------------
+//  Media Elements
+// ----------------------------------------------------------------------------
+
+
+%shared-media-elements {
+  // Correct display value for IE 8/9
+  // Standardize vertical alignment across all browsers
+  // & sets error message text to "error color" if elements not supported
+  color: $c-error;
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+
+
+audio {
+  @extend %shared-media-elements;
+
+  &:not([controls]) {
+    // Prevent browsers from displaying 'audio' w/out controls
+    @extend %display-none;
+    // Remove excess height in iOS 5
+    height: 0;
+  }
+}
+
+canvas {
+  @extend %shared-media-elements;
+}
+
+
+video {
+  @extend %shared-media-elements;
+}
+
+
+embed,
+object {
+  max-width: 100%;
+}

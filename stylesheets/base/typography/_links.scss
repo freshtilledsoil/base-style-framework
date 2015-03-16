@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------
+//  Anchor Element
+// -----------------------------------------------------------------
+
+// [1] -- Removes grey background from links in IE 10
+// [2] -- Variables are all declared in base-styles.scss
+
+a {
+  background-color: transparent; // [1]
+  color: $c-base-text;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:not([href]):hover {
+    color: $c-base-text;
+  }
+
+  &[tabindex], &[tabindex]:hover {
+    color: $c-base-link; // [2]
+  }
+
+  &:link {
+    color: $c-base-link; // [2]
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $c-base-link--visited; // [2]
+  }
+
+  &:hover {
+    color: $c-base-link--hover; // [2]
+  }
+
+  &:focus {
+    color: $c-base-link--hover; // [2]
+    outline: 1px dotted $c-base-link--focus-outline;
+  }
+
+  &:active {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &[download], &[target] {
+    font-weight: bold;
+  }
+
+} // end a{}
+
+
+// Role="button"
+[role="button"] {
+  @extend %shared-button-styling !optional;
+  text-decoration: none !important;
+}

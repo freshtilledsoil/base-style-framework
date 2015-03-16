@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------
+//  Input Elements -- Menus
+// -----------------------------------------------------------------
+
+%select,
+select {
+  font-size: inherit;
+  font-family: inherit;
+  display: inline-block;
+  width: 100%;
+
+  &[multiple] {
+    display: block;
+    min-height: 50px;
+    padding: 4px;
+    resize: vertical;
+    width: 100%;
+  }
+}
+
+option {
+  padding: 4px;
+
+  &[disabled] {
+    background: rgba(0,0,0,.05);
+    display: none;
+  }
+}
+
+
+
+%optgroup,
+optgroup {
+  font-weight: bold;
+  font-style: normal;
+
+  option {
+    padding-left: 16px;
+  }
+}
+
+
+
+%datalist,
+datalist {
+  // ...
+}

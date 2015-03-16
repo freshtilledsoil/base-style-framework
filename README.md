@@ -45,7 +45,7 @@ Those add-ons include extended styling for:
 * Floats
 * Form Elements
 * Tables
-* Width & Basic Fluid Grid
+* Width & Basic Fluid Grid classes
 
 
 
@@ -82,35 +82,9 @@ You can then either modify the uncompressed FTS UI Kit CSS files, or if you are 
 If you need to install Sass on your machine, you can read how to do that here: http://sass-lang.com/install
 
 Compiling the Sass then only requires you to command line into the parent UI Kit folder and run
-```sass --watch sass:css```
-to compile the Sass into the CSS distribution folder.
+```sass --watch stylesheets```
+to compile the Sass into the CSS.
 
-
-
-The Sass files are broken up into various partials for organization.
-
-<pre>
-sass
-|
-|__ base
-|    contains all files for styling that effects standard HTML markup
-|     |
-|     |
-|     |__ __config
-|       files that allow you to change certain styling values via variables,
-|       without needing to edit the core sass files.
-|
-|
-|__ addons
-|    contains all files for helper classes to expand upon the base styling
-|
-|__ base-styles.scss
-|    imports all base styles into a single base-styles.css file
-|
-|
-|__ base-styles--plus.scss
-     imports all base styles & add-ons into a single base-styles--plus.css file
-</pre>
 
 
 ### Contributing

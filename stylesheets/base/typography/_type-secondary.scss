@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------
+//  Suplimental Elements to Standard Body Copy Elements
+// -----------------------------------------------------------------
+
+// Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+%bold,
+b,
+strong {
+  font-weight: bold;
+}
+
+
+%italic,
+i,
+em {
+  font-style: italic;
+}
+
+
+%has-title {
+  border-bottom: 1px dotted;
+}
+
+// Addresses styling not present in IE 8-11, Safari & Chrome
+abbr {
+  text-transform: uppercase;
+
+  &[title] {
+    @extend %has-title;
+  }
+}
+
+// Addresses styling not present in Safari or Chrome
+dfn {
+  @extend %italic;
+
+  &[title] {
+    @extend %has-title;
+  }
+}
+
+
+ins {
+  @extend %bold;
+  color: #038800;
+}
+
+
+%cite,
+cite {
+  @extend %bold;
+}
+
+
+%mark,
+mark {
+  // IE 8 + 9 do not have default styling for <mark>
+  background: #f5e700;
+  color: #333;
+  padding: 0 2px;
+}
+
+
+%sub-sup-shared {
+  @extend %small; // shrink font
+  // Prevent `sub` and `sup` affecting `line-height` in all browsers.
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+
+%sub,
+sub {
+  @extend %sub-sup-shared;
+  bottom: -.25em;
+}
+
+
+%sup,
+sup {
+  @extend %sub-sup-shared;
+  top: -.5em;
+}

@@ -8,7 +8,7 @@
 *
 *     Beyond Normalization, a base set of markup styling and
 *     patterns to provide an easily configurable head-start
-*     to any web project.*
+*     to any web project.
 *
 *   License:
 *     The MIT License (MIT)
@@ -23,7 +23,7 @@
 *
 ********************************************************************/
 nav ul:after,
-nav ol:after, .row:after, .grid:after {
+nav ol:after, .grid:after {
   clear: both;
   content: '';
   display: table; }
@@ -86,12 +86,12 @@ body {
 
 ::-moz-selection {
   background: #2f578e;
-  color: #fff;
+  color: white;
   text-shadow: none; }
 
 ::selection {
   background: #2f578e;
-  color: #fff;
+  color: white;
   text-shadow: none; }
 
 article, aside,
@@ -154,6 +154,7 @@ p {
 
 sub,
 sup,
+.txt-small,
 small {
   font-size: 0.75em;
   display: inline-block;
@@ -314,11 +315,11 @@ nav {
   background: transparent;
   padding: 1em; }
   nav a {
-    color: #333;
+    color: #333333;
     display: block; }
     nav a:link,
     nav a:visited {
-      color: #333;
+      color: #333333;
       text-decoration: none; }
 
 label {
@@ -397,7 +398,7 @@ textarea, .input-file-block, .select-container {
   input[type="url"]:focus,
   input[type="week"]:focus,
   textarea:focus, .input-file-block:focus, .select-container:focus {
-    background: #fff;
+    background: white;
     border-color: #73ace6;
     box-shadow: 0 0 0 1px #6baceb;
     outline: 0; }
@@ -434,7 +435,7 @@ textarea[disabled] {
   cursor: not-allowed; }
 input[readonly],
 textarea[readonly] {
-  background-color: #fff; }
+  background-color: white; }
 input[required]:valid,
 textarea[required]:valid {
   border-color: #bfe673; }
@@ -455,7 +456,7 @@ input[type="submit"] {
   border-bottom-width: 3px;
   padding: 0.9em 1.15em 0.7em;
   -webkit-appearance: button;
-  background: #fff;
+  background: white;
   color: #808080;
   cursor: pointer;
   display: inline-block;
@@ -482,7 +483,7 @@ input[type="submit"] {
   input[type="reset"]:active,
   input[type="submit"]:active {
     background: #73ace6;
-    color: #fff;
+    color: white;
     transform: translate(0, 1px); }
   [disabled][role="button"], button[disabled], [disabled].input-file-btn,
   input[disabled][type="button"],
@@ -568,10 +569,10 @@ input[type=range]::-webkit-slider-runnable-track {
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background: #fff;
+  background: white;
   border-radius: 3px;
   border: 1px solid #d6d6d6;
-  box-shadow: 0 2px 3px #ddd, inset 0 2px 0 0 #f2f2f2;
+  box-shadow: 0 2px 3px #dddddd, inset 0 2px 0 0 #f2f2f2;
   cursor: pointer;
   height: 16px;
   margin-top: -6px;
@@ -592,10 +593,10 @@ input[type=range]::-moz-range-track {
   width: 100%; }
 
 input[type=range]::-moz-range-thumb {
-  background: #fff;
+  background: white;
   border-radius: 3px;
   border: 1px solid #d6d6d6;
-  box-shadow: 0 2px 3px #ddd, inset 0 2px 0 0 #f2f2f2;
+  box-shadow: 0 2px 3px #dddddd, inset 0 2px 0 0 #f2f2f2;
   cursor: pointer;
   height: 16px;
   width: 32px; }
@@ -623,10 +624,10 @@ input[type=range]::-ms-fill-upper {
   box-shadow: 1px 1px 1px #0a0a0a, 0px 0px 1px #0d0d0d; }
 
 input[type=range]::-ms-thumb {
-  background: #fff;
+  background: white;
   border-radius: 3px;
   border: 1px solid #d6d6d6;
-  box-shadow: 0 2px 3px #ddd;
+  box-shadow: 0 2px 3px #dddddd;
   cursor: pointer;
   height: 16px;
   width: 32px; }
@@ -673,8 +674,8 @@ figcaption {
 audio, canvas, video {
   color: #e67373;
   display: inline-block;
-  vertical-align: baseline;
-  max-width: 100%; }
+  max-width: 100%;
+  vertical-align: baseline; }
 
 audio:not([controls]) {
   height: 0; }
@@ -684,7 +685,7 @@ object {
   max-width: 100%; }
 
 table {
-  background: #fff;
+  background: white;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: inherit;
@@ -769,7 +770,7 @@ iframe {
   width: 100%; }
 
 dialog {
-  background: #fff;
+  background: white;
   border-radius: 4px;
   border: 2px solid #b2b2b2;
   display: none;
@@ -794,7 +795,7 @@ dialog {
 .float-left, .callout-float-left {
   float: left; }
 
-.float-right, .callout-float-right, .row > [class^="w-"].float-right {
+.float-right, .callout-float-right {
   float: right; }
 
 .callout-float-left {
@@ -803,15 +804,33 @@ dialog {
 .callout-float-right {
   margin: 1em 0 1em 1em; }
 
-.row {
-  margin-bottom: 1.25em;
-  margin-left: -2.5em; }
-  .row > [class^="w-"] {
+.grid {
+  margin-left: -1.5em;
+  margin-bottom: 1.25em; }
+  .grid > [class*="w-"] {
     float: left;
-    margin-bottom: 0;
     min-height: 1px;
-    padding-left: 2.5em;
+    padding-left: 1.5em;
     position: relative; }
+    .grid > [class*="w-"] .grid {
+      margin-bottom: 0; }
+      @media screen and (max-width: 720px) {
+        .grid > [class*="w-"] .grid > [class*="w-"]:last-child,
+        .grid > [class*="w-"] .grid > .w-force {
+          margin-bottom: 0; } }
+    @media screen and (max-width: 720px) {
+      .grid > [class*="w-"] {
+        margin-bottom: 1.25em; } }
+
+.grid--gutters-wide {
+  margin-left: -2.5em; }
+  .grid--gutters-wide > [class*="w-"] {
+    padding-left: 2.5em; }
+
+.grid--gutters-narrow {
+  margin-left: -.5em; }
+  .grid--gutters-narrow > [class*="w-"] {
+    padding-left: .5em; }
 
 .w-100 {
   width: 100%; }
@@ -864,34 +883,6 @@ dialog {
 @media screen and (max-width: 720px) {
   [class*="w-"]:not(.w-force) {
     width: 100%; } }
-.grid {
-  margin-left: -1.5em;
-  margin-bottom: 1.25em; }
-  .grid > [class*="w-"] {
-    float: left;
-    min-height: 1px;
-    padding-left: 1.5em;
-    position: relative; }
-    .grid > [class*="w-"] .grid {
-      margin-bottom: 0; }
-      @media screen and (max-width: 720px) {
-        .grid > [class*="w-"] .grid > [class*="w-"]:last-child,
-        .grid > [class*="w-"] .grid > .w-force {
-          margin-bottom: 0; } }
-    @media screen and (max-width: 720px) {
-      .grid > [class*="w-"] {
-        margin-bottom: 1.25em; } }
-
-.grid--gutters-wide {
-  margin-left: -2.5em; }
-  .grid--gutters-wide > [class*="w-"] {
-    padding-left: 2.5em; }
-
-.grid--gutters-narrow {
-  margin-left: -.5em; }
-  .grid--gutters-narrow > [class*="w-"] {
-    padding-left: .5em; }
-
 /********************************************************************
 *
 *   Modules
@@ -940,7 +931,7 @@ dialog {
 .btn {
   background: #3c6fb4;
   border-color: #3663a1;
-  color: #fff; }
+  color: white; }
   .btn:hover, .btn:focus {
     background: #3663a1;
     border-color: #2f578e; }
@@ -948,7 +939,7 @@ dialog {
 .btn-cta {
   background: #73ace6;
   border-color: #5d9fe2;
-  color: #fff; }
+  color: white; }
   .btn-cta:hover, .btn-cta:focus {
     background: #5d9fe2;
     border-color: #4892de; }
@@ -1045,12 +1036,12 @@ dialog {
       display: none; }
 
 .emph-block {
-  background: #fefff;
-  border-radius: 0 0 4px 4px;
-  padding: 1em;
-  border: 1px solid #ccc;
+  background: #feffff;
+  border: 1px solid #b2b2b2;
   border-bottom-width: 3px;
-  border-top: none; }
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 1em; }
 
 .fieldset-clean {
   border: 0;
@@ -1074,5 +1065,3 @@ dialog {
   .table-container table {
     min-width: 600px;
     table-layout: fixed; }
-
-/*# sourceMappingURL=base-styles.css.map */

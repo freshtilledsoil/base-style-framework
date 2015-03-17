@@ -6,32 +6,47 @@
 //  with a .row parent element.
 // -----------------------------------------------------------------
 
-.row {
+.grid {
   @extend %clearfix;
+  margin-left: -1.5em;
   margin-bottom: 1.25em;
-  margin-left: -2.5em;
 
-  > [class^="w-"] {
+  > [class*="w-"] {
     float: left;
-    margin-bottom: 0; // just in case an element
-                      // w/margin is used w/this class
     min-height: 1px;
-    padding-left: 2.5em;
+    padding-left: 1.5em;
     position: relative;
 
-    &.float-right {
-      @extend .float-right;
+    .grid {
+      margin-bottom: 0;
+
+      @media screen and ( max-width: 720px ) {
+        > [class*="w-"]:last-child,
+        > .w-force {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media screen and ( max-width: 720px ) {
+      margin-bottom: 1.25em;
     }
   }
 }
 
-// Example mark-up:
-// -----------------------------------------------------------------
-// <div class="row">
-//   <div class="w-60">
-//     ...
-//   </div>
-//   <div class="w-40">
-//     ...
-//   </div>
-// </div>
+
+.grid--gutters-wide {
+  margin-left: -2.5em;
+
+  > [class*="w-"] {
+    padding-left: 2.5em;
+  }
+}
+
+.grid--gutters-narrow {
+  margin-left: -.5em;
+
+  > [class*="w-"] {
+    padding-left: .5em;
+  }
+}

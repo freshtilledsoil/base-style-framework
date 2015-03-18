@@ -1,4 +1,31 @@
-@import 'config/__import';
-@import 'base/__import';
-@import 'layout/__import';
-@import 'vendor/__import';
+/********************************************************************
+*
+*   Base Style Framework:
+*     github.com/freshtilledsoil/base-style-framework
+*     Version 1.0.1
+*     Last Updated: 03.18.2015
+*
+*     Beyond Normalization, a base set of markup styling and
+*     patterns to provide an easily configurable head-start
+*     to any web project.
+*
+*   License:
+*     The MIT License (MIT)
+*
+********************************************************************/
+
+@import
+  // Config / Support files
+        'config/__import',
+
+  // Base Markup Styles
+        'base/__import',
+
+  // Layout Classes
+        'layout/__import',
+
+  // Modules
+        'modules/__import',
+
+  // Vendor (3rd party) Styles
+        'vendor/__import';

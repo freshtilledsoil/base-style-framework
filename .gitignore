@@ -1,6 +1,8 @@
 # Sass
 .sass-cache
 .sass-cache/*
+*.css.map
+.css.map
 
 # Jekyll
 _site/
@@ -22,6 +24,5 @@ Session.vim
 .Trashes
 
 # Windows
-Thumbs.db 
+Thumbs.db
 Desktop.ini
-/css/base-styles.css.map

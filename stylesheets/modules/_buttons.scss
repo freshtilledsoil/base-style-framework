@@ -2,6 +2,12 @@
 //  Button Styling
 // -----------------------------------------------------------------
 
+$btn--background-color:         #3c6fb4;
+$btn-cta--background-color:     #73ace6;
+$btn-cancel--background-color:  $c-gray-lightest;
+
+
+
 .btn,
 .btn-cta,
 .btn-cancel {
@@ -15,14 +21,14 @@
 
 
 .btn {
-  background: #3c6fb4;
-  border-color: darken(#3c6fb4, 5%);
+  background: $btn--background-color;
+  border-color: darken($btn--background-color, 5%);
   color: $c-white;
 
   &:hover,
   &:focus {
-    background: darken(#3c6fb4, 5%);
-    border-color: darken(#3c6fb4, 10%);
+    background: darken($btn--background-color, 5%);
+    border-color: darken($btn--background-color, 10%);
   }
 }
 
@@ -30,14 +36,14 @@
 
 
 .btn-cta {
-  background: #73ace6;
-  border-color: darken(#73ace6, 5%);
+  background: $btn-cta--background-color;
+  border-color: darken($btn-cta--background-color, 5%);
   color: $c-white;
 
   &:hover,
   &:focus {
-    background: darken(#73ace6, 5%);
-    border-color: darken(#73ace6, 10%);
+    background: darken($btn-cta--background-color, 5%);
+    border-color: darken($btn-cta--background-color, 10%);
   }
 }
 
@@ -45,13 +51,13 @@
 
 
 .btn-cancel {
-  background: $c-gray-lightest;
+  background: $btn-cancel--background-color;
   color: #7f7f7f;
   border-color: $c-gray-light;
 
   &:hover,
   &:focus {
-    background: darken($c-gray-lightest, 5%);
+    background: darken($btn-cancel--background-color, 5%);
     border-color: darken($c-gray-light, 10%);
     color: #7f7f7f;
   }

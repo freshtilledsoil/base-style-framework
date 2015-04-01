@@ -1,0 +1,210 @@
+// -----------------------------------------------------------------
+//  Input Elements -- Text
+// -----------------------------------------------------------------
+
+// Shared styling rules between input types
+// -----------------------------------------------------------------
+
+@mixin placeholder-text($c-text: $c-input-placeholder, $f-style: italic) {
+  color: $c-text;
+  font-style: $f-style;
+}
+
+$ph-vendor-list: "::-moz-", ":-ms-input-", "::webkit-input-";
+$ph-vendor-list2: "&::-moz-", "&:-ms-input-", "&::webkit-input-";
+
+@each $ph in $ph-vendor-list {
+  input#{$ph}placeholder,
+  textarea#{$ph}placeholder {
+    @include placeholder-text;
+  }
+}
+
+
+
+
+
+%shared-input-styling {
+  background: $input-background-color;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  box-shadow: $input-text-box-shadow;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: normal;
+  margin: 0;
+  max-width: 100%;
+  padding: .75em;
+  text-transform: none;
+  width: 100%;
+
+  &:focus {
+    background: $input-focus-background-color;
+    border-color: $input-focus-border-color;
+    box-shadow: $input-text-box-shadow--focus;
+    outline: 0;
+  }
+
+} // end shared-input-styling
+
+
+%shared-input-date-color-number {
+  max-width: 208px;
+}
+
+// Standard styling for input types
+// -----------------------------------------------------------------
+
+%input-color,
+input[type="color"] {
+  @extend %shared-input-styling;
+  @extend %shared-input-date-color-number;
+  padding: .25em;
+}
+
+
+
+%input-date,
+input[type="date"] {
+  @extend %shared-input-styling;
+  @extend %shared-input-date-color-number;
+}
+
+
+
+%input-email,
+input[type="email"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-month,
+input[type="month"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-number,
+input[type="number"] {
+  @extend %shared-input-styling;
+  @extend %shared-input-date-color-number;
+
+  // Fix the cursor style for Chrome's increment / decrement buttons. For certain
+  // `font-size` values of the `input`, it causes the cursor style of the
+  // decrement button to change from `default` to `text`.
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    height: auto;
+  }
+}
+
+
+
+%input-password,
+input[type="password"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-search,
+input[type="search"] {
+  @extend %shared-input-styling;
+
+  // Makes it look like a normal text input,
+  // only with a (x) when text has been entered
+  -webkit-appearance: textfield;
+
+  // Remove inner padding and search cancel button in Safari and Chrome on OS X.
+  // Safari (but not Chrome) clips the cancel button when the search input has
+  // padding (and `textfield` appearance).
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+}
+
+
+
+%input-tel,
+input[type="tel"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-text,
+input[type="text"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-time,
+input[type="time"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-url,
+input[type="url"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%input-week,
+input[type="week"] {
+  @extend %shared-input-styling;
+}
+
+
+
+%textarea,
+textarea {
+  @extend %shared-input-styling;
+  display: block;
+  min-width: 60px;
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+
+
+// Additional attribute styling for text inputs and textareas
+input,
+textarea {
+
+  &[disabled] {
+    background-color: $disabled-background-color;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+
+  &[readonly] {
+    background-color: $readonly-background-color;
+  }
+
+
+  &[required] {
+
+    &:valid {
+      border-color: $input-valid-border-color;
+    }
+  }
+}
+
+
+output {
+  background: $output-background-color;
+  border: $base-border-style;
+  display: inline-block;
+  margin: auto .25em;
+  padding: .5em;
+}

@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------
+//  Progress Element
+// -----------------------------------------------------------------
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: $progress-background-color;
+  border-radius: $progress-border-radius;
+  border: $progress-border;
+  display: inline-block;
+  height: $progress-height;
+  max-width: 100%;
+  padding: $progress-padding;
+  vertical-align: baseline;
+  width: 100%;
+
+  // Webkit needs this additional rule to style background of <progress>
+  &::-webkit-progress-bar {
+    background: $progress-background-color;
+  }
+
+  // Style <progress> value
+  &::-moz-progress-bar {
+    background: $progress-fill-color;
+    border-radius: $progress-border-radius;
+  }
+
+  &::-webkit-progress-bar {
+    background: $progress-fill-color;
+    border-radius: $progress-border-radius;
+  }
+
+  // Style <progress> if there is no value assigned (defaults to 100% width)
+  &:not([value])::-moz-progress-bar {
+    background: none;
+  }
+
+  &:not([value])::-webkit-progress-bar {
+    background: none;
+  }
+}

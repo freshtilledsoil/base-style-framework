@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Base Menu Element</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- style -->
+  <link rel="stylesheet" href="../../stylesheets/base-styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+  <body style="padding: 40px;">
+
+    <h1>Menu Element</h1>
+
+    <menu type="list" label="standard-menu-list">
+      <li><a href="#">item 1</a></li>
+      <li><a href="#">item 2</a></li>
+      <li><a href="#">item 3</a></li>
+    </menu>
+
+
+    <menu type="toolbar" label="toolbar w/out list items">
+      <button>Option 1</button>
+      <button>Option 2</button>
+    </menu>
+
+
+    <menu type="toolbar" label="toolbar with list items">
+      <li><button>Option 1</button></li>
+      <li><button>Option 2</button></li>
+    </menu>
+
+
+    <hr />
+
+    <h2>Menu &amp; menuitem</h2>
+
+    <menu type="context" id="menu" label="a context menu">
+      <menuitem label="Tweet This Page" onclick="window.location='https://twitter.com/intent/tweet?text=' + document.title + ' ' + window.location.href;" icon="twitter.png"></menuitem>
+
+      <menuitem onclick="window.location='https://twitter.com/intent/tweet?text=' + document.title + ' ' + window.location.href;" >Derp</menuitem>
+
+      <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location;"></menuitem>
+
+      <menu label="Submenu Example">
+        <menuitem>Item 1</menuitem>
+        <menuitem>Item 2</menuitem>
+        <menuitem>Item 3</menuitem>
+      </menu>
+    </menu>
+
+    <div id="target" contextmenu="menu">
+      Right-click here to see the menu.
+    </div>
+
+  </body>
+</html>

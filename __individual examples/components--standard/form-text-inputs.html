@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <title>Base Text Input Styles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- style -->
+  <link rel="stylesheet" href="../../stylesheets/base-styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+  <body style="padding: 40px;">
+
+    <h1 class="txt-h4">Text Based Input Elements</h1>
+
+    <label for="textExample">Text Input</label>
+    <br />
+    <input id="textExample" type="text" placeholder="John Smith..." />
+
+    <br />
+    <br />
+
+    <label for="textExample2">Text Input w/ Datalist</label>
+    <br />
+    <input id="textExample2" type="text" placeholder="John Smith..." list="datalist" />
+    <datalist id="datalist">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </datalist>
+
+    <br />
+    <br />
+
+    <label for="textExample3">Text Input [readonly]</label>
+    <br />
+    <input id="textExample3" type="text" placeholder="John Smith..." value="Mark Summers" readonly />
+
+    <br />
+    <br />
+
+    <label for="textExample4">Text Input [disabled]</label>
+    <br />
+    <input id="textExample4" type="text" placeholder="John Smith..." disabled />
+
+    <br />
+    <br />
+
+    <label for="textExample4">Text Input [required]</label>
+    <br />
+    <input id="textExample4" type="text" placeholder="John Smith..." required />
+
+    <br />
+    <br />
+
+    <!-- URL -->
+    <label for="urlExample">URL Input</label>
+    <br />
+    <input id="urlExample" type="url" placeholder="http://..." />
+
+    <br />
+    <br />
+
+    <!-- Password -->
+    <label for="passwordExample">Password Input</label>
+    <br />
+    <input id="passwordExample" type="password" placeholder="abc123..." />
+
+    <br />
+    <br />
+
+    <!-- Email-->
+    <label for="emailExample">Email Input</label>
+    <br />
+    <input id="emailExample" type="email" placeholder="johnsmith@fakename.com" />
+
+    <br />
+    <br />
+
+    <!-- Telephone Number -->
+    <label for="telExample">Telephone Input</label>
+    <br />
+    <input id="telExample" type="tel" placeholder="555-555-5555" pattern="[0-9]*" />
+
+    <br />
+    <br />
+
+
+    <label for="dateExample">Date Input</label>
+    <br />
+    <input id="dateExample" type="date" placeholder="Y/M/D" />
+
+    <br />
+    <br />
+
+    <!-- enter a date and time (hour, minute, second and fraction of a second **
+         based on UTC time zone) -->
+    <!-- <label for="datetimeExample">Date Time Input</label>
+    <br />
+    <input id="datetimeExample" type="datetime" placeholder="DateTime" /> -->
+
+    <!-- <br />
+    <br /> -->
+
+    <!-- enter a date and time without a time zone -->
+    <!-- <label for="datetimelocalExample">Local Date Time Input</label>
+    <br />
+    <input id="datetimelocalExample" type="datetime-local" placeholder="Y/M/D/T" /> -->
+
+    <!-- <br />
+    <br />
+     -->
+    <!-- enter month and year -->
+    <label for="monthExample">Month Input</label>
+    <br />
+    <input id="monthExample" type="month" placeholder="M/Y" />
+
+    <br />
+    <br />
+
+    <!-- enter a date consisting of a week-year number and a week number -->
+    <label for="weekExample">Week Input</label>
+    <br />
+    <input id="weekExample" type="week" placeholder="Week/Year" />
+
+    <br />
+    <br />
+
+    <h2>"Text Inputs"</h2>
+    <p>
+      These inputs fall back to text inputs in browsers that don't support them.
+    </p>
+
+    <!-- input for specifying color (via a color box in supported browsers) -->
+    <label for="colorExample">Color Input</label>
+    <br />
+    <input id="colorExample" type="color" placeholder="#000" />
+
+    <br />
+    <br />
+
+    <!-- input for entering a floating point number -->
+    <label for="numberExample">Number Input</label>
+    <br />
+    <input id="numberExample" type="number" placeholder="Number..." />
+
+    <br />
+    <br />
+
+    <!-- input for entering a number within a defined range set -->
+    <label for="rangeExample">Range Input</label>
+    <br />
+    <input id="rangeExample" type="range" min="0" max="100" step="1" value="" placeholder="1" />
+      <!-- enter any desired numerical value for min & max.
+          the value entered for step -->
+
+  </body>
+</html>

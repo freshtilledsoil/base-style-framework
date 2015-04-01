@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Base Forms: Radios and Checkboxes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../../stylesheets/base-styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body style="padding: 40px;">
+
+    <h1>Radio Button &amp; Checkbox Elements</h1>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Radio Groups (wrapped in label)</legend>
+
+        <label for="radio-example-1">
+          <input type="radio" id="radio-example-1" name="radio-group" value="1" /> Option 1
+        </label>
+        <label for="radio-example-2">
+          <input type="radio" id="radio-example-2" name="radio-group" value="2" /> Option 2
+        </label>
+        <label for="radio-example-3">
+          <input type="radio" id="radio-example-3" name="radio-group" value="3" /> Option 3
+        </label>
+        <label for="radio-example-4">
+          <input type="radio" id="radio-example-4" name="radio-group" value="4" /> Option 4
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio Groups (followed by label)</legend>
+
+        <input type="radio" id="radio-example-1b" name="radio-group-b" value="1" />
+        <label for="radio-example-1b">
+          Option 1
+        </label>
+        <input type="radio" id="radio-example-2b" name="radio-group-b" value="2" />
+        <label for="radio-example-2b">
+          Option 2
+        </label>
+        <input type="radio" id="radio-example-3b" name="radio-group-b" value="3" />
+        <label for="radio-example-3b">
+          Option 3
+        </label>
+        <input type="radio" id="radio-example-4b" name="radio-group-b" value="4" />
+        <label for="radio-example-4b">
+          Option 4
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Radio Groups (radio followed by label -- disabled)</legend>
+
+        <input type="radio" id="radio-example-1c" name="radio-group-c" value="1" disabled />
+        <label for="radio-example-1c">
+          Option 1
+        </label>
+        <input type="radio" id="radio-example-2c" name="radio-group-c" value="2" disabled />
+        <label for="radio-example-2c">
+          Option 2
+        </label>
+        <input type="radio" id="radio-example-3c" name="radio-group-c" value="3" disabled />
+        <label for="radio-example-3c">
+          Option 3
+        </label>
+        <input type="radio" id="radio-example-4c" name="radio-group-c" value="4" disabled />
+        <label for="radio-example-4c">
+          Option 4
+        </label>
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <legend>Checkboxes (wrapped in label)</legend>
+
+        <label for="chk1">
+          <input type="checkbox" name="chk1" id="chk1" value="1" /> Option 1
+        </label>
+        <label for="chk2">
+          <input type="checkbox" name="chk2" id="chk2" value="2" /> Option 2
+        </label>
+        <label for="chk3">
+          <input type="checkbox" name="chk3" id="chk3" value="3" /> Option 3
+        </label>
+        <label for="chk4">
+          <input type="checkbox" name="chk4" id="chk4" value="4" /> Option 4
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkboxes (followed by label)</legend>
+
+        <input type="checkbox" name="chk1b" id="chk1b" value="1" />
+        <label for="chk1b">
+          Option 1
+        </label>
+
+        <input type="checkbox" name="chk2b" id="chk2b" value="2" />
+        <label for="chk2b">
+          Option 2
+        </label>
+
+        <input type="checkbox" name="chk3b" id="chk3b" value="3" />
+        <label for="chk3b">
+          Option 3
+        </label>
+
+        <input type="checkbox" name="chk4b" id="chk4b" value="4" />
+        <label for="chk4b">
+          Option 4
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkboxes (followed by label -- disabled)</legend>
+
+        <input type="checkbox" name="chk1c" id="chk1c" value="1" disabled />
+        <label for="chk1c">
+          Option 1
+        </label>
+
+        <input type="checkbox" name="chk2c" id="chk2c" value="2" disabled />
+        <label for="chk2c">
+          Option 2
+        </label>
+
+        <input type="checkbox" name="chk3c" id="chk3c" value="3" disabled />
+        <label for="chk3c">
+          Option 3
+        </label>
+
+        <input type="checkbox" name="chk4c" id="chk4c" value="4" disabled />
+        <label for="chk4c">
+          Option 4
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkboxes (followed by label -- required)</legend>
+
+        <input type="checkbox" name="chk1d" id="chk1d" value="1" required />
+        <label for="chk1d">
+          Yes
+        </label>
+
+        <input type="checkbox" name="chk2d" id="chk2d" value="2" required />
+        <label for="chk2d">
+          No
+        </label>
+      </fieldset>
+
+    </form>
+
+  </body>
+</html>

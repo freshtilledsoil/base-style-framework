@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Base Form Elements: Output</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../../stylesheets/base-styles.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'>
+  </head>
+
+  <body style="padding: 40px;">
+
+    <h1>Output Element</h1>
+
+    <p>
+      Using an input range + input number to diplay the output value on change.
+    </p>
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" name="b" value="50" /> <br />+<br />
+      <input type="number" name="a" value="10" id="num-ex" /> <br />=
+      <output name="result" role="status"></output>
+    </form>
+
+
+    <script>
+      var num = document.getElementById('num-ex');
+
+      function startingValue () {
+        num.value()
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------
+//  Code / Monospaced Elements
+// -----------------------------------------------------------------
+
+// vars (move to main var file)
+$mono-padding:    2px 4px;
+$code-bg-block:   #595959;
+$code-bg-inline:  #d6d6d6;
+
+
+// shared fonts
+%mono-fonts {
+  // Fixes inconsistent font-rendering in all browsers
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+
+
+
+
+
+code {
+  @extend %mono-fonts;
+  background: $code-bg-inline;
+  padding: $mono-padding;
+}
+
+
+kbd {
+  @extend %mono-fonts;
+  border: 1px solid $code-bg-inline;
+  text-transform: uppercase;
+  padding: $mono-padding;
+
+  kbd {
+    border: 0;
+    padding: 0;
+  }
+}
+
+
+samp {
+  @extend %mono-fonts;
+}
+
+
+var {
+  @extend %mono-fonts;
+}
+
+
+// consistent overflow in all browsers
+pre {
+  @extend %mono-fonts;
+  overflow: auto;
+  white-space: pre-wrap;
+
+  > code {
+    background: $code-bg-block;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,.2);
+    color: #fff;
+    display: block;
+    line-height: 1.75;
+    padding: .75em;
+    text-transform: none;
+  }
+}

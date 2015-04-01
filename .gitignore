@@ -1,6 +1,11 @@
 # Sass
 .sass-cache
 .sass-cache/*
+<<<<<<< HEAD
+=======
+*.css.map
+.css.map
+>>>>>>> master
 
 # Jekyll
 _site/
@@ -22,5 +27,10 @@ Session.vim
 .Trashes
 
 # Windows
+<<<<<<< HEAD
 Thumbs.db 
 Desktop.ini
+=======
+Thumbs.db
+Desktop.ini
+>>>>>>> master

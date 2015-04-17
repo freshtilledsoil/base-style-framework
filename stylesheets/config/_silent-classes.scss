@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------
+//  Silent Classes
+// -----------------------------------------------------------------
+
+// Clear fix for IE8+ & modern browsers
+// http: //www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+%clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+
+// Remove list base styling
+%list-clean {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Set a standard margin for elements
+%global-margin-base {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+
+%display-none {
+  display: none;
+}

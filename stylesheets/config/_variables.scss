@@ -1,33 +1,27 @@
-// -----------------------------------------------------------------
-//  Silent Classes
-// -----------------------------------------------------------------
+//  ----------------------------------------
+//  Typography Library
+//  ----------------------------------------
 
-// Clear fix for IE8+ & modern browsers
-// http: //www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
-%clearfix {
-  &:after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-}
+$base-font-size:                16px;
+$base-font-family:              'Open Sans', sans-serif;
+$base-line-height:              1.3;
 
 
-// Remove list base styling
-%list-clean {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+
+// pixel valuations are based off 16px base-font-size
+$h1-font-size:                  3em;       // 48px
+$h2-font-size:                  2.5em;     // 40px
+$h3-font-size:                  2em;       // 32px
+$h4-font-size:                  1.5em;     // 24px
+$h5-font-size:                  1.25em;    // 20px
+$h6-font-size:                  1.125em;   // 18px
+
+$base-font-size:                1em;       // 16px
+$small-font-size:               .75em;     // 12px
+$tiny-font-size:                .625em;    // 10px
 
 
-// Set a standard margin for elements
-%global-margin-base {
-  margin-bottom: 1em;
-  margin-top: 0;
-}
 
-
-%display-none {
-  display: none;
-}
+// Table Headings/Captions
+$table-heading--col:            $base-font-size;
+$table-heading--row:            $small-font-size;

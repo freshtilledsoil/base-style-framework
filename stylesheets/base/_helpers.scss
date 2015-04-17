@@ -1,0 +1,16 @@
+.is-disabled, [disabled] {
+  cursor: not-allowed;
+  opacity: .75;
+  
+  + label,
+  + label {
+    pointer-events: none;
+  }
+  
+}
+
+.is-clean {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

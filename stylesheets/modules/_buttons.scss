@@ -1,0 +1,46 @@
+.btn,
+.btn-cta,
+.btn-cancel {
+  min-width: 220px;
+  
+  [disabled],
+  [disabled]:hover {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+}
+
+.btn {
+  background: #3c6fb4;
+  border-color: #3663a1;
+  color: #fff;
+  
+  &:hover, &:focus {
+    background: #3663a1;
+    border-color: #2f578e; }
+}
+
+.btn-cta {
+  background: #73ace6;
+  border-color: #5d9fe2;
+  color: #fff;
+  
+  &:hover,
+  &:focus {
+    background: #5d9fe2;
+    border-color: #4892de;
+  }
+}
+
+.btn-cancel {
+  background: #f7f7f7;
+  color: #7f7f7f;
+  border-color: #d6d6d6;
+
+  &:hover,
+  &:focus {
+    background: #eaeaea;
+    border-color: #bdbdbd;
+    color: #7f7f7f;
+  }
+}

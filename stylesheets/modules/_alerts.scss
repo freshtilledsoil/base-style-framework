@@ -1,0 +1,32 @@
+.alert {
+  background: #f6f6f6;
+  border-radius: 2px;
+  border: 1px solid #71abe8;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  > p {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0; }
+}
+
+.alert-success {
+  background: #EBF8D4;
+  border-color: #BEE86C;
+  color: #597F0C;
+}
+
+.alert-warning {
+  background: #FDFCD5;
+  border-color: #FCF376;
+  color: #CC9F28;
+}
+
+.alert-error {
+  background: #F7EDED;
+  border-color: #E87271;
+  color: #CC3D3D;
+}

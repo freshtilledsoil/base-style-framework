@@ -1,0 +1,441 @@
+[hidden], template, audio:not([controls]) {
+  display: none;
+}
+
+::-moz-selection {
+  background: #2f578e;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #2f578e;
+  color: #fff;
+  text-shadow: none;
+}
+
+article, aside,
+details, footer,
+header, main,
+menu, nav, section,
+summary, figcaption {
+  display: block;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  background: #fdfdfd;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+
+body {
+  color: #595959;
+  font: 1em "Open Sans", sans-serif, sans-serif;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+.txt-h1,
+h1, .txt-h2,
+h2, .txt-h3,
+h3, .txt-h4,
+h4 {
+  font-weight: 600; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.333;
+  margin: 0 0 .75em 0; }
+
+h1, .txt-h1 {
+  font-size: 3em; }
+
+h2, .txt-h2 {
+  font-size: 2.5em;
+}
+
+h3, .txt-h3 {
+  font-size: 2em;
+}
+
+h4, .txt-h4 {
+  font-size: 1.5em;
+}
+
+h5, .txt-h5 {
+  font-size: 1.25em; }
+
+h6, .txt-h6, caption {
+  font-size: 1.125em;
+}
+
+p {
+  line-height: 1.75;
+}
+
+p, ol, ul {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+sub, sup, small, .txt-small {
+  font-size: 0.75em;
+  display: inline-block;
+  line-height: 1.3;
+}
+
+ins, cite, dt, b, strong {
+  font-weight: 700;
+}
+
+dfn, i, em {
+  font-style: italic;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted; }
+
+abbr {
+  text-transform: uppercase; }
+
+ins {
+  color: #038800;
+}
+
+mark {
+  background: #f5e700;
+  color: #333;
+  padding: 0 2px;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+a {
+  background-color: transparent;
+  color: #595959;
+  font-weight: 600;
+  text-decoration: none; 
+
+  &:link {
+    color: #3c6fb4;
+    text-decoration: underline;
+  }
+  
+  &:visited {
+    color: #3663a1;
+  }
+  
+  &:hover {
+    color: #1b3251;
+  }
+  
+  &:focus {
+    color: #1b3251;
+    outline: 1px dotted #3c6fb4;
+  }
+  
+  &:active {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+ol, ul {
+  padding-left: 1.5em;
+  
+  ol, ul, ol, ul {
+    margin-top: 1em;
+  }
+}
+
+ol ol {
+  list-style-type: lower-alpha; 
+}
+
+li {
+  margin-left: 1em;
+}
+
+dd {
+  padding-left: 1.5em;
+}
+
+q {
+  quotes: "‘" "’" "“" "”";
+  
+  &:before {
+    content: "‘";
+    content: open-quote;
+  }
+  
+  &:after {
+    content: "’";
+    content: close-quote;
+  }
+  
+  &:first-child {
+    display: inline-block;
+    text-indent: -0.22em;
+  }
+
+}
+
+blockquote {
+  font-size: 1.25em;
+  font-style: italic; 
+  
+  p {
+    font-style: normal;
+    margin-bottom: 0; 
+    
+    &:after,
+    &:before {
+      font-size: 1.5em;
+      line-height: 0;
+      position: relative;
+      top: 2px;
+    }
+    &:after {
+      content: "\201D";
+      right: -1px;
+    }
+    &:before {
+      content: "\201C";
+      left: -1px;
+    }
+    
+  }
+  
+  cite {
+    font-style: normal;
+    padding-left: .875em;
+     
+    &:before {
+      content: "– ";
+    }
+  } // cite
+  
+} // blockquote
+
+code, kbd, samp, var, pre {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+code {
+  background: #d6d6d6;
+  padding: 2px 4px; }
+
+kbd {
+  border: 1px solid #d6d6d6;
+  text-transform: uppercase;
+  padding: 2px 4px; }
+  kbd kbd {
+    border: 0;
+    padding: 0; }
+
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+   > code {
+    background: #595959;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: block;
+    line-height: 1.75;
+    padding: .75em;
+    text-transform: none; }
+}
+
+img, svg {
+  border: 0;
+  color: #e67373;
+  max-width: 100%;
+  vertical-align: bottom; }
+
+svg {
+  max-height: 100%; }
+  svg:not(:root) {
+    overflow: hidden; }
+
+figure {
+  background: #f7f7f7;
+  border: 1px solid #b2b2b2;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; 
+  > * {
+    display: block;
+    margin: .25em;
+    max-width: 100%;
+    width: calc(100% - .5em);
+  }
+  
+  figcaption {
+    margin: 0;
+    width: auto; 
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+figcaption {
+  background: #f3f3f3;
+  padding: 1em;
+}
+
+audio, canvas, video {
+  color: #e67373;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  height: 0;
+}
+
+embed,
+object {
+  max-width: 100%; }
+
+table {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  width: 100%; }
+
+thead {
+  background: #f7f7f7; }
+  thead th {
+    padding: .75em .5em; }
+
+tfoot {
+  background: #f7f7f7; }
+  tfoot td {
+    font-size: 0.625em;
+    font-weight: bold;
+    font-weight: 600; }
+
+tr {
+  border-bottom: 1px solid #f0f0f0; }
+  tr:last-child {
+    border-bottom: none; }
+
+th, td {
+  padding: 1em .5em;
+  text-align: left;
+  vertical-align: top; }
+
+th {
+  font-weight: bold;
+  font-weight: 600; }
+  th[scope="row"] {
+    font-size: 0.75em; }
+  th[scope="col"] {
+    font-size: 1em; }
+
+td {
+  font-size: 0.75em; }
+
+caption {
+  font-weight: bold;
+  caption-side: top;
+  text-align: left; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+  display: block;
+  height: 1px;
+  margin: 1.5em 0; }
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f7f7f7;
+  border-radius: 2px;
+  border: 1px solid #d6d6d6;
+  display: inline-block;
+  height: 16px;
+  max-width: 100%;
+  padding: 2px;
+  vertical-align: baseline;
+  width: 100%; 
+  
+  &::-webkit-progress-bar {
+    background: #f7f7f7;
+  }
+  
+  &::-moz-progress-bar {
+    background: #bfe673;
+    border-radius: 2px;
+  }
+  
+  &::-webkit-progress-bar {
+    background: #bfe673;
+    border-radius: 2px;
+  }
+  
+  &:not([value])::-moz-progress-bar {
+    background: none;
+  }
+  
+  &:not([value])::-webkit-progress-bar {
+    background: none; 
+  }
+  
+} // progress
+
+iframe {
+  background: #f7f7f7;
+  border: 1px solid #d6d6d6;
+  display: block;
+  min-height: 100px;
+  width: 100%;
+}
+
+dialog {
+  background: #fff;
+  border-radius: 4px;
+  border: 2px solid #b2b2b2;
+  display: none;
+  padding: 1.125em;
+  margin: auto;
+  max-width: 80%;
+  
+  [open] {
+    display: block;
+  }
+  
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}

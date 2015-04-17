@@ -13,45 +13,4 @@
 
 @import
         // Base Styling to standard HTML markup
-        'html',
-
-
-        // Typography Specific
-        'typography/type-primary',    // h1-6, p, small
-        'typography/type-secondary',  // inline type elements
-        'typography/links',           // a, a:____, a[____]
-        'typography/lists',           // ul, ol, dl
-        'typography/quotes',          // q, blockquote
-        'typography/code',            // kbd, code, pre, var, kbd, samp
-
-
-        // Navigation / Menu Specific
-        'nav',
-
-
-        // Form / Button Specific
-        'forms/forms--general',
-        'forms/forms--input__text',
-        'forms/forms--input__buttons',
-        'forms/forms--input__menus',
-        'forms/forms--input__range',
-
-
-        // Media Specific
-        'img-svg',
-        'figure-figcaption',
-        'media',
-
-
-        // Semantic 'layout' Specific
-        'tables',
-        'hr',
-
-
-        // Progress Specific
-        'progress',
-
-
-        // Content Wrapping Elements (better name plz)
-        'iframe',
-        'dialog';
+        'base-ui-kit',

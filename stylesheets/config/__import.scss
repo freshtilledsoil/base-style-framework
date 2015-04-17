@@ -2,13 +2,8 @@
 *
 *   Config Files
 *
-*   Variables, silent classes (@extend), and mixins (@include/@mixin)
-*   files get included here.
-*
 ********************************************************************/
 
 
-@import 'var-colors',
-        'var-type',
-        'var-element-specific',
-        'silent-classes';
+@import 'variables',
+        'mixins',

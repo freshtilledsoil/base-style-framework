@@ -28,6 +28,91 @@
 }
 
 
+// combine elements with the visually-hidden mixin
+%off-screen {
+  @include move-off-screen;
+}
+
+
+// combine elements with the visually-hidden mixin
+%is-visually-hidden {
+  @include visually-hidden;
+}
+
+
+// combine elements with the replace-text mixin
+%replace-text {
+  @include replace-text;
+}
+
+
+// combine elements with the inline-block fix mixin
+%inline-block-fix {
+  @include inline-block;
+}
+
+
+// combine display none elements
 %display-none {
   display: none;
 }
+
+
+
+
+/*
+
+    Note about silent classes:
+
+    In Sass, silent classes combine selectors to target single rule sets,
+    rather than repeating rule sets, ala mixins.
+
+    For example:
+
+    @mixin foo-mixin () { background: #f00; }
+
+    .foo {
+      @include foo-mixin;
+    }
+
+    .foo-2 {
+      @include foo-mixin;
+    }
+
+    would output as:
+
+    .foo { background: #f00; }
+    .foo-2 { background: #f00; }
+
+    where as
+
+    %foo-sc { background: #f00; }
+
+    .foo {
+      @extend foo-sc;
+    }
+
+    .foo-2 {
+      @extend foo-sc;
+    }
+
+    would output as:
+
+    .foo, .foo-2 { background: #f00; }
+
+
+    Where this is a problem is that version of IE8 have a cut off on the
+    amount of selectors it will render before it just throws up it's hands
+    and says "LOL NOPE."
+
+    So when using silent classes vs mixins, be aware of your selector groups
+    and redundancy of rule sets.
+
+
+    General rule of thumb:
+
+    If you are extending or including a particular static rule set more than 5 times,
+    e.g. clearfix, it may make more sense to instead create a single helper class (.clearfix) instead of a mixin/silent class.
+
+
+*/

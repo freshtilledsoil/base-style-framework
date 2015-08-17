@@ -17,7 +17,7 @@
   position: absolute !important;
 }
 
-// Move text off screen 
+// Move text off screen
 
 @mixin replace-text () {
   text-indent: -9999px;
@@ -39,12 +39,12 @@
 @mixin clearfix () {
   *zoom: 1;
   clear: both;
-  
+
   &:before, &:after {
     content: " ";
     display: table;
   }
-  
+
   &:after {
     clear: both;
   }
@@ -64,7 +64,7 @@
      -moz-border-radius: $values;
           border-radius: $values;
   -webkit-background-clip: padding-box;
-     -moz-background-clip: padding; 
+     -moz-background-clip: padding;
           background-clip: padding-box;
 }
 
@@ -109,3 +109,40 @@
   background: -ms-linear-gradient(top,  $start 0%,$end 100%);
   background: linear-gradient(to bottom,  $start 0%,$end 100%);
 }
+
+
+// ----------------------------------------------------------------------------
+//  CSS Triangles
+// ----------------------------------------------------------------------------
+
+@mixin triangle($tri-size, $tri-color, $tri-direction) {
+  border: inset $tri-size;
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+
+  @if ($tri-direction == top) {
+    border-color: $tri-color transparent transparent transparent;
+    border-top-style: solid;
+  }
+
+  @if ($tri-direction == bottom) {
+    border-color: transparent transparent $tri-color transparent;
+    border-bottom-style: solid;
+  }
+
+  @if ($tri-direction == left) {
+    border-color: transparent transparent transparent $tri-color;
+    border-left-style: solid;
+  }
+
+  @if ($tri-direction == right) {
+    border-color: transparent $tri-color transparent transparent;
+    border-right-style: solid;
+  }
+}
+
+// Example:
+// ----------------------------------------------------------------------------
+// @include triangle(5px, #fff, bottom);

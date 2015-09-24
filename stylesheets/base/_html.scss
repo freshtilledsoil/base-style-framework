@@ -42,10 +42,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.txt-h1,
-h1, .txt-h2,
-h2, .txt-h3,
-h3, .txt-h4,
+.#{$ns}txt-h1,
+h1, .#{$ns}txt-h2,
+h2, .#{$ns}txt-h3,
+h3, .#{$ns}txt-h4,
 h4 {
   font-weight: 600; }
 
@@ -53,25 +53,25 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.333;
   margin: 0 0 .75em 0; }
 
-h1, .txt-h1 {
+h1, .#{$ns}txt-h1 {
   font-size: 3em; }
 
-h2, .txt-h2 {
+h2, .#{$ns}txt-h2 {
   font-size: 2.5em;
 }
 
-h3, .txt-h3 {
+h3, .#{$ns}txt-h3 {
   font-size: 2em;
 }
 
-h4, .txt-h4 {
+h4, .#{$ns}txt-h4 {
   font-size: 1.5em;
 }
 
-h5, .txt-h5 {
+h5, .#{$ns}txt-h5 {
   font-size: 1.25em; }
 
-h6, .txt-h6, caption {
+h6, .#{$ns}txt-h6, caption {
   font-size: 1.125em;
 }
 
@@ -84,7 +84,7 @@ p, ol, ul {
   margin-top: 0;
 }
 
-sub, sup, small, .txt-small {
+sub, sup, small, .#{$ns}txt-small {
   font-size: 0.75em;
   display: inline-block;
   line-height: 1.3;

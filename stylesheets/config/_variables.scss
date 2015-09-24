@@ -1,4 +1,12 @@
 //  ----------------------------------------
+//  Namespacing
+//  - there is no namespacing by default,  but if there is ever a need to make
+//  home grown classes more unique, set the $ns variable to something like 'fts-'
+//  ----------------------------------------
+
+$ns : '' !default;
+
+//  ----------------------------------------
 //  Typography Library
 //  ----------------------------------------
 

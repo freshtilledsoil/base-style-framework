@@ -1,12 +1,13 @@
-.is-disabled, [disabled] {
+.is-disabled,
+[disabled] {
   cursor: not-allowed;
   opacity: .75;
-  
+
   + label,
   + label {
     pointer-events: none;
   }
-  
+
 }
 
 .is-clean {
